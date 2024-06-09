@@ -16,7 +16,7 @@ function sendMail() {
     let phoneNumber = document.getElementById('phone').value
     let camera = document.getElementById('camera').value
     let dvr = document.getElementById('dvr').value
-    let outlet = document.getElementById('outlet').value
+    // let outlet = document.getElementById('outlet').value
     let message = document.getElementById('message').value
 
     let emailbody = `
@@ -48,12 +48,6 @@ function sendMail() {
                                 <tr>
                                     <td class="esd-block-text es-m-txt-c" align="left" style="text-align: left;">
                                         <p style="margin: 0;"><b>No. of dvr : </b>${dvr},</p>
-                                        <hr>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="esd-block-text es-m-txt-c" align="left" style="text-align: left;">
-                                        <p style="margin: 0;"><b>No. of Outlets : </b>${outlet},</p>
                                         <hr>
                                     </td>
                                 </tr>
@@ -93,7 +87,7 @@ function sendMail() {
             document.getElementById('phone').value = ""
             document.getElementById('camera').value = ""
             document.getElementById('dvr').value = ""
-            document.getElementById('outlet').value = ""
+            // document.getElementById('outlet').value = ""
             document.getElementById('message').value = ""
             enableBtn()
         } else {
