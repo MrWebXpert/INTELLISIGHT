@@ -38,7 +38,7 @@ body {
 
 .borderwhite {
     border: 1px solid var(--light);
-    border-radius: 5px;
+    /* border-radius: 10px; */
 }
 
 .icon {
@@ -601,6 +601,8 @@ hr {
 .service .service-item {
     box-shadow: 0 0 45px rgba(0, 38, 66, 0.2);
     color: #FEFEFE;
+    border: 1px solid #06DDCC;
+    border-radius: 5px;
 
 }
 
@@ -630,7 +632,7 @@ hr {
 
 .service .service-item:hover .service-img::before {
     height: 100%;
-    /* background: rgba(11, 234, 215, 0.316); */
+    color: #FEFEFE !important;
 }
 
 .service .service-item .service-img:hover img {
@@ -647,7 +649,6 @@ hr {
 
 
 .service .service-item:hover .service-content::before {
-    /* background: rgba(9, 235, 216, 0.174); */
     height: 100%;
     color: var(--light) !important;
 }
@@ -665,7 +666,7 @@ hr {
 }
 
 .service .service-item:hover .service-content .service-content-inner h5 {
-    color: var(--darkBlue);
+    color: var(--primary);
 }
 
 /*** Service End ***/

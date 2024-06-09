@@ -44,15 +44,15 @@
 
 
     <!-- Topbar Start -->
-    <div class="container-fluid bgDarkBlue px-5 d-none d-lg-block">
+    <!-- <div class="container-fluid bg-whitepx-5 d-none d-lg-block">
         <div class="row gx-0 align-items-center" style="height: 45px;">
             <div class="col-lg-8 text-center text-lg-start mb-lg-0">
                 <div class="d-flex flex-wrap">
-                    <a href="#" class="text-light me-4"><i class="fas fa-map-marker-alt textPrimary me-2"></i>Find A
+                    <a href="#" class="textDarkBlue me-4"><i class="fas fa-map-marker-alt textPrimary me-2"></i>Find A
                         Location</a>
-                    <a href="#" class="text-light me-4"><i
+                    <a href="#" class="textDarkBlue me-4"><i
                             class="fas fa-phone-alt textPrimary me-2"></i>+01234567890</a>
-                    <a href="#" class="text-light me-0"><i
+                    <a href="#" class="textDarkBlue me-0"><i
                             class="fas fa-envelope textPrimary me-2"></i>Example@gmail.com</a>
                 </div>
             </div>
@@ -69,13 +69,13 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- Topbar End -->
 
 
     <!-- Navbar & Hero Start -->
     <div class="container-fluid position-relative p-0">
-        <nav class="navbar navbar-expand-lg navbar-light bg-white px-4 px-lg-5 py-3 py-lg-0">
+        <nav class="navbar navbar-expand-lg navbar-light bgDarkBlue px-4 px-lg-5 py-3 py-lg-0">
             <a href="index.html" class="navbar-brand p-0">
                 <img src="img/logo3.png" alt="Logo">
             </a>
@@ -147,9 +147,9 @@
                         <div class="about-img pb-5 ps-5">
                             <img src="img/img1.jpeg" class="img-fluid rounded w-100" style="object-fit: cover;"
                                 alt="Image">
-                            <div class="about-img-inner">
+                            <!-- <div class="about-img-inner">
                                 <img src="img/img2.jpeg" class="img-fluid rounded-circle w-100 h-100" alt="Image">
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                     <div class="col-lg-7 wow fadeInRight" data-wow-delay="0.4s">
@@ -187,7 +187,7 @@
                 <div class="container py-5 pt-lg-0">
                     <div class="row gx-0 d-flex align-items-center justify-content-center ">
                         <div class="col-lg-4 wow zoomIn" data-wow-delay="0.1s">
-                            <div class="bgDarkBlue shadow d-flex align-items-center justify-content-center p-4 borderwhite"
+                            <div class="bgDarkBlue shadow d-flex align-items-center justify-content-center p-4 borderwhite rounded"
                                 style="height: 150px;">
                                 <div class="bg-white d-flex align-items-center justify-content-center rounded mb-2"
                                     style="width: 70px; height: 70px;">
@@ -200,7 +200,7 @@
                             </div>
                         </div>
                         <div class="col-lg-4 wow zoomIn" data-wow-delay="0.3s">
-                            <div class="bgPrimary shadow d-flex align-items-center justify-content-center p-4"
+                            <div class="bgPrimary shadow d-flex align-items-center justify-content-center p-4 rounded"
                                 style="height: 150px;">
                                 <div class="bgDark d-flex align-items-center justify-content-center rounded mb-2"
                                     style="width: 60px; height: 60px;">
@@ -213,7 +213,7 @@
                             </div>
                         </div>
                         <div class="col-lg-4 wow zoomIn" data-wow-delay="0.5s">
-                            <div class="bgDarkBlue shadow d-flex align-items-center justify-content-center p-4 borderwhite"
+                            <div class="bgDarkBlue shadow d-flex align-items-center justify-content-center p-4 borderwhite rounded"
                                 style="height: 150px;">
                                 <div class="bg-white d-flex align-items-center justify-content-center rounded mb-2"
                                     style="width: 70px; height: 70px;">
@@ -431,7 +431,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.1s">
+                    <!-- <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.1s">
                         <div class="service-item rounded">
                             <div class="service-img rounded-top">
                                 <img src="img/img5.jpeg" class="img-fluid rounded-top w-100" alt="">
@@ -472,7 +472,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
                 <hr>
             </div>
@@ -624,45 +624,107 @@
                     <div class="appointment-form rounded p-5">
                         <p class="fs-4 text-uppercase textPrimary">Get In Touch</p>
                         <h1 class="display-5 mb-4 text-white">Get Appointment</h1>
-                        <form>
+                        <!-- <form action="" id="mailForm" onsubmit="return disableBtn()">
                             <div class="row gy-3 gx-4">
                                 <div class="col-xl-6">
-                                    <input type="text"
+                                    <input type="text" id="name"
                                         class="form-control py-3 border-primary bg-transparent text-white"
-                                        placeholder="Enter you Name">
+                                        placeholder="Enter you Name" value="">
                                 </div>
                                 <div class="col-xl-6">
-                                    <input type="email"
+                                    <input type="email" id="email"
                                         class="form-control py-3 border-primary bg-transparent text-white"
-                                        placeholder="Enter your Email">
+                                        placeholder="Enter your Email" value="">
                                 </div>
                                 <div class="col-xl-6">
-                                    <input type="phone" class="form-control py-3 border-primary bg-transparent"
-                                        placeholder="Enter your Phone">
+                                    <input id="phone" type="phone"
+                                        class="form-control py-3 border-primary bg-transparent"
+                                        placeholder="Enter your Phone" value="">
                                 </div>
                                 <div class="col-xl-6">
-                                    <input type="number" class="form-control py-3 border-primary bg-transparent"
-                                        placeholder="Enter No. of Camera">
+
+                                    <input id="camera" type="number"
+                                        class="form-control py-3 border-primary bg-transparent"
+                                        placeholder="Enter No. of Camera" value="">
                                 </div>
                                 <div class="col-xl-6">
-                                    <input type="number" class="form-control py-3 border-primary bg-transparent"
-                                        placeholder="Enter No. of DVR(s)">
+                                    <input id="dvr" type="number"
+                                        class="form-control py-3 border-primary bg-transparent"
+                                        placeholder="Enter No. of DVR(s)" value="">
                                 </div>
                                 <div class="col-xl-6">
-                                    <input type="number" class="form-control py-3 border-primary bg-transparent"
-                                        placeholder="Enter No. of Outlets">
+                                    <input id="outlet" type="number"
+                                        class="form-control py-3 border-primary bg-transparent"
+                                        placeholder="Enter No. of Outlets" value="">
                                 </div>
                                 <div class="col-12">
-                                    <textarea class="form-control border-primary bg-transparent text-white" name="text"
-                                        id="area-text" cols="30" rows="5" placeholder="Write Comments"></textarea>
+                                    <textarea id="message" class="form-control border-primary bg-transparent text-white"
+                                        name="text" id="area-text" cols="30" rows="5" value=""
+                                        placeholder="Message"></textarea>
                                 </div>
                                 <div class="col-12">
-                                    <button type="button" class="btn btn-primary text-white w-100 py-3 px-5">SUBMIT
+                                    <button type='submit' id="saveData"
+                                        class="btn btn-primary text-white w-100 py-3 px-5">SUBMIT
                                         NOW</button>
                                 </div>
                             </div>
+                        </form> -->
+
+
+
+                        <form>
+                            <div class="row g-3">
+                                <div class="col-lg-12 col-xl-6">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control bg-transparent border border-white"
+                                            id="name" placeholder="Your Name">
+                                        <label for="name">Your Name</label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12 col-xl-6">
+                                    <div class="form-floating">
+                                        <input type="email" class="form-control bg-transparent border border-white"
+                                            id="email" placeholder="Your Email">
+                                        <label for="email">Your Email</label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12 col-xl-6">
+                                    <div class="form-floating">
+                                        <input type="phone" class="form-control bg-transparent border border-white"
+                                            id="phone" placeholder="Phone">
+                                        <label for="phone">Your Phone</label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12 col-xl-6">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control bg-transparent border border-white"
+                                            id="project" placeholder="Project">
+                                        <label for="project">Your Project</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control bg-transparent border border-white"
+                                            id="subject" placeholder="Subject">
+                                        <label for="subject">Subject</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <textarea class="form-control bg-transparent border border-white"
+                                            placeholder="Leave a message here" id="message"
+                                            style="height: 160px"></textarea>
+                                        <label for="message">Message</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <button class="btn btn-light text-primary w-100 py-3">Send Message</button>
+                                </div>
+                            </div>
                         </form>
+
                     </div>
+
                 </div>
             </div>
             <hr>
@@ -737,28 +799,32 @@
                     <div class="col-lg-3 col-md-6">
                         <h3 class="text-white mb-4">Follow Us</h3>
                         <div class="d-lg-inline-flex align-items-center d-none mt-3">
-                            <a class="btn btn-square rounded-circle bg-light textDarkBlue me-2" href=""><i
-                                    class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-square rounded-circle bg-light textDarkBlue me-2" href=""><i
-                                    class="fab fa-twitter"></i></a>
-                            <a class="btn btn-square rounded-circle bg-light textDarkBlue me-2" href=""><i
-                                    class="fab fa-linkedin-in"></i></a>
-                            <a class="btn btn-square rounded-circle bg-light textDarkBlue me-0" href=""><i
-                                    class="fab fa-instagram"></i></a>
+                            <div class="d-flex align-items-center justify-content-end">
+                                <a href="#" class="btn btn-light btn-square border rounded-circle nav-fill me-3"><i
+                                        class="fab fa-facebook-f"></i></a>
+                                <a href="#" class="btn btn-light btn-square border rounded-circle nav-fill me-3"><i
+                                        class="fab fa-twitter"></i></a>
+                                <a href="#" class="btn btn-light btn-square border rounded-circle nav-fill me-3"><i
+                                        class="fab fa-instagram"></i></a>
+                                <a href="#" class="btn btn-light btn-square border rounded-circle nav-fill me-0"><i
+                                        class="fab fa-linkedin-in"></i></a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
     </section>
     <!-- Footer End -->
-
 
     <!-- Back to Top -->
     <a href="#" class="btn bgPrimary btn-lg-square back-to-top"><i class="fa fa-arrow-up"></i></a>
 
 
     <!-- JavaScript Libraries -->
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
+
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery.counterup@2.1.0/jquery.counterup.min.js"></script>
@@ -771,7 +837,11 @@
 
 
     <!-- Template Javascript -->
+
+    <script src="js/mail.js"></script>
     <script src="js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
 
 </body>
 
