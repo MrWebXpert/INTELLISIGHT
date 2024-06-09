@@ -669,56 +669,38 @@
                                 </div>
                             </div>
                         </form> -->
-
-
-
-                        <form>
-                            <div class="row g-3">
-                                <div class="col-lg-12 col-xl-6">
-                                    <div class="form-floating">
-                                        <input type="text" class="form-control bg-transparent border border-white"
-                                            id="name" placeholder="Your Name">
-                                        <label for="name">Your Name</label>
+                        <form action="" id="mailForm" onsubmit="return disableBtn()">
+                            <div class="row d-flex align-align-items-center justify-content-start py-5 px-0  ">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Enter your name"
+                                            required="" value="" id="name">
                                     </div>
                                 </div>
-                                <div class="col-lg-12 col-xl-6">
-                                    <div class="form-floating">
-                                        <input type="email" class="form-control bg-transparent border border-white"
-                                            id="email" placeholder="Your Email">
-                                        <label for="email">Your Email</label>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="email" class="form-control" placeholder="Enter your Email"
+                                            required="" value="" id="email">
                                     </div>
                                 </div>
-                                <div class="col-lg-12 col-xl-6">
-                                    <div class="form-floating">
-                                        <input type="phone" class="form-control bg-transparent border border-white"
-                                            id="phone" placeholder="Phone">
-                                        <label for="phone">Your Phone</label>
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Enter your phone Number"
+                                            id="phoneNumber" required>
                                     </div>
                                 </div>
-                                <div class="col-lg-12 col-xl-6">
-                                    <div class="form-floating">
-                                        <input type="text" class="form-control bg-transparent border border-white"
-                                            id="project" placeholder="Project">
-                                        <label for="project">Your Project</label>
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <div class="mb-3">
+                                            <textarea class="textarea" cols="30" rows="5" required=""
+                                                placeholder="Enter your Message" value="" id="message"></textarea>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="col-12">
-                                    <div class="form-floating">
-                                        <input type="text" class="form-control bg-transparent border border-white"
-                                            id="subject" placeholder="Subject">
-                                        <label for="subject">Subject</label>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="form-floating">
-                                        <textarea class="form-control bg-transparent border border-white"
-                                            placeholder="Leave a message here" id="message"
-                                            style="height: 160px"></textarea>
-                                        <label for="message">Message</label>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <button class="btn btn-light text-primary w-100 py-3">Send Message</button>
+                                <div class="col-md-12">
+                                    <button class="btn btn-primary py-3  mt-3 wow zoomIn contact-btn"
+                                        data-wow-delay="0.2s" type='submit' id="saveData">Send
+                                        Message</button>
                                 </div>
                             </div>
                         </form>
