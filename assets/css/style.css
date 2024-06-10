@@ -975,6 +975,10 @@ body::-webkit-scrollbar-thumb {
   font-size: 18px;
 }
 
+.mainmenu li a:hover {
+  color: var(--canvi-color);
+}
+
 .mainmenu li ul {
   position: absolute;
   background: #f3f3f3;
