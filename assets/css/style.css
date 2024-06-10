@@ -1974,11 +1974,11 @@ body::-webkit-scrollbar-thumb {
 /*================================================
 10. Subscribe CSS
 =================================================*/
-.subscribe-wrap {
+/* .subscribe-wrap {
   padding: 100px 20px;
   border-radius: 32px;
   background: linear-gradient(212deg, #0023EC 13.33%, #9746D8 55.74%, #D100EB 93.86%);
-}
+} */
 
 .subscribe-wrap .section-title p {
   max-width: 806px;
@@ -1995,22 +1995,22 @@ body::-webkit-scrollbar-thumb {
   }
 }
 
-.subscribe-wrap.subscribe-wrap-two {
+/* .subscribe-wrap.subscribe-wrap-two {
   background-image: url(../images/subscribe-bg.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-}
-
+} */
+/* 
 .subscribe-wrap.subscribe-wrap-two .section-title .title {
   max-width: 740px;
   margin: 0 auto;
-}
+} */
 
-.subscribe-wrap.subscribe-wrap-two .section-title p {
+/* .subscribe-wrap.subscribe-wrap-two .section-title p {
   max-width: 462px;
   margin: 12px auto 32px;
-}
+} */
 
 
 
@@ -2051,7 +2051,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .cs-subscribe-wrap {
-  background: var(--primary-purple);
+  background: var(--color-white);
   border-radius: 60px;
 }
 
@@ -2081,6 +2081,7 @@ body::-webkit-scrollbar-thumb {
   font-size: 48px;
   font-weight: 600;
   line-height: 120.833%;
+  color: var(--color-light-black);
 }
 
 @media only screen and (max-width: 991.98px) {
@@ -2091,6 +2092,7 @@ body::-webkit-scrollbar-thumb {
 
 .cs-subscribe-wrap .cs-subscribe-info p {
   margin: 24px 0 48px;
+  color: var(--color-deep-blue);
 }
 
 @media only screen and (max-width: 991.98px) {
@@ -2100,7 +2102,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .cs-subscribe-wrap .cs-subscribe-info .cs-sub-btn .common-btn {
-  background-color: #0A0E19;
+  background-color: #0A0E19 !important;
 }
 
 .cs-subscribe-wrap .cs-subscribe-info .cs-sub-btn .common-btn:hover {
@@ -2821,7 +2823,7 @@ body::-webkit-scrollbar-thumb {
   height: 100%;
 }
 
-.choose-card-body .icon-card {
+/* .choose-card-body .icon-card {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2838,7 +2840,7 @@ body::-webkit-scrollbar-thumb {
   margin: 0 auto 32px;
   border-radius: 50%;
   border: 1px solid rgba(255, 255, 255, 0.25);
-}
+} */
 
 @media only screen and (max-width: 991.98px) {
   .choose-card-body .icon-card {
@@ -2858,10 +2860,10 @@ body::-webkit-scrollbar-thumb {
   margin: 0 auto;
 }
 
-.choose-us-img {
+/* .choose-us-img {
   -webkit-filter: brightness(90%) contrast(110%) saturate(80%);
   filter: brightness(90%) contrast(110%) saturate(80%);
-}
+} */
 
 .ai-img-choose-box {
   border-radius: 24px;
@@ -2886,16 +2888,16 @@ body::-webkit-scrollbar-thumb {
   transform: translateY(-6px);
 }
 
-.choose-img-bg-1 {
+/* .choose-img-bg-1 {
   bottom: 200px;
-}
+} */
 
-.choose-img-bg-2 {
+/* .choose-img-bg-2 {
   right: 20px;
   top: 43px;
   -webkit-animation: slide_2 18s ease-in-out alternate infinite;
   animation: slide_2 18s ease-in-out alternate infinite;
-}
+} */
 
 @-webkit-keyframes slide_2 {
   0% {
@@ -2981,7 +2983,7 @@ body::-webkit-scrollbar-thumb {
   }
 }
 
-.cs-choose-card-body {
+/* .cs-choose-card-body {
   height: 100%;
   background: linear-gradient(44deg, #11192c 65.66%, rgba(17, 25, 44, 0) 99.16%), url(../images/shapes/pattern-masked-1.svg);
   background-size: cover;
@@ -2992,26 +2994,27 @@ body::-webkit-scrollbar-thumb {
   transition: -webkit-transform 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   transition: transform 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   transition: transform 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55), -webkit-transform 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-}
+} */
 
-.cs-choose-card-body .cs-icon-card {
+/* .cs-choose-card-body .cs-icon-card {
   margin-bottom: 32px;
-}
+} */
 
-.cs-choose-card-body:hover {
+/* .cs-choose-card-body:hover {
   background: linear-gradient(44deg, #11192c 65.66%, rgba(17, 25, 44, 0) 99.16%), url(../images/shapes/pattern-masked-2.svg);
   -webkit-transform: translateY(-3px);
   transform: translateY(-3px);
-}
+} */
 
 @media only screen and (max-width: 1199.98px) {
   .cs-choose-card-body {
     padding: 20px;
   }
 
+  /* 
   .cs-choose-card-body .cs-icon-card {
     margin-bottom: 22px;
-  }
+  } */
 }
 
 
@@ -3288,7 +3291,7 @@ body::-webkit-scrollbar-thumb {
 
 .form-wrap .common-form-box .input-group input:focus,
 .form-wrap .common-form-box .input-group textarea:focus {
-  border-color: var(--color-blue);
+  border-color: var(--color-white);
   outline: none;
 }
 
@@ -3457,48 +3460,14 @@ body::-webkit-scrollbar-thumb {
 24. Contact CSS
 =================================================*/
 .contact-card-box {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
+  gap: 20px;
 }
 
-.contact-card-box .contact-card-icon {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  margin-bottom: 30px;
-  width: 64px;
-  height: 64px;
-  background: var(--color-blue);
-  border: none;
-  border-radius: 50%;
-  -webkit-transition: all .3s;
-  transition: all .3s;
-}
-
-.contact-card-box .contact-card-icon svg,
-.contact-card-box .contact-card-icon i {
+.contact-card-icon {
   color: var(--color-white);
+  margin: 5px 0;
 }
 
 .contact-card-box .contact-card-text {
@@ -3521,39 +3490,6 @@ body::-webkit-scrollbar-thumb {
   line-height: 32px;
 }
 
-.contact-card-box:hover .contact-card-icon {
-  background: var(--primary-green);
-}
 
-.contact-hero {
-  background-image: url(../images/contact.png);
-  border-radius: 24px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-
-.map-wrap {
-  width: 100%;
-  height: 560px;
-}
-
-.map-wrap iframe {
-  height: 100%;
-  width: 100%;
-}
-
-@media only screen and (max-width: 767.98px) {
-  .map-wrap {
-    height: 250px;
-  }
-}
-
-@media only screen and (max-width: 575.98px) {
-  .container {
-    padding-right: 1rem;
-    padding-left: 1rem;
-  }
-}
 
 /*# sourceMappingURL=style.css.map */
