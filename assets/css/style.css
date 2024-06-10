@@ -28,6 +28,10 @@
   }
 }
 
+hr {
+  border: 3px solid var(--canvi-color);
+}
+
 .bg-canvi {
   background: var(--canvi-color);
 }
