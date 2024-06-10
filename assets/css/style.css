@@ -1872,6 +1872,7 @@ body::-webkit-scrollbar-thumb {
   }
 }
 
+/* 
 .faq-nav-list-wrap {
   display: -ms-grid;
   display: grid;
@@ -1879,7 +1880,7 @@ body::-webkit-scrollbar-thumb {
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 24px;
   margin: 0 0 0 auto;
-}
+} */
 
 .faq-nav-list-wrap .nav-link {
   display: -webkit-box;
