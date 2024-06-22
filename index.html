@@ -12,7 +12,15 @@
 
     <!-- Main CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
-
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init({
+                publicKey: "HopR1PEjnfbXbdYrV",
+            });
+        })();
+    </script>
 
 </head>
 
@@ -889,7 +897,7 @@
                     </div>
                     <div class="col-lg-7 col-md-12">
                         <div class="form-wrap form-wrap-contact w-100">
-                            <form class="common-form-box" action="" id="mailForm" onsubmit="return disableBtn()">
+                            <form class="common-form-box" id="mailForm" onsubmit="return disableBtn()">
                                 <h3 class="form-title text_color_white ">Get In touch</h3>
                                 <p class="form-info text_color_light_white">Our team would love to hear from you. Write
                                     your
@@ -941,7 +949,8 @@
                                     <div class="col-lg-12 pt-3">
                                         <div class="form-info-wrap">
                                             <button type="submit" id="saveData"
-                                                class="common-btn bg_color_deep_blue w-100 d-flex justify-content-center">Submit
+                                                class="common-btn bg_color_deep_blue w-100 d-flex justify-content-center"
+                                                type="submit">Submit
                                                 Now</button>
                                         </div>
                                     </div>
@@ -1163,8 +1172,7 @@
 
     </div>
 
-
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="assets/js/mail.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <!-- Jquery JS -->
     <script src="assets/js/jquery-3.7.1.min.js"></script>
@@ -1189,7 +1197,7 @@
     <script src="assets/js/gsap.min.js"></script>
     <!-- Main JS -->
     <script src="assets/js/main.js"></script>
-    <script src="assets/js/mail.js"></script>
+
 </body>
 
 
